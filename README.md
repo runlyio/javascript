@@ -7,7 +7,7 @@
 ## Install
 
 ```
-yarn add @runly/eslint-config --dev
+npm install @runly/eslint-config --save-dev
 ```
 
 ## Usage
