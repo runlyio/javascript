@@ -2,7 +2,7 @@
   "name": "@runly/eslint-config",
   "description": "Shareable ESLint configuration used in Runly client applications",
   "main": "index.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/runlyio/eslint-config.git"
