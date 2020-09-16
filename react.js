@@ -91,5 +91,11 @@ module.exports = {
 		// https://reactjs.org/docs/hooks-rules.html
 		"react-hooks/rules-of-hooks": "error",
 		"react-hooks/exhaustive-deps":"error"
+	},
+	settings: {
+		react: {
+			pragma: "React",
+			version: "detect"
+		}
 	}
 };
