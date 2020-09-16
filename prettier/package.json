@@ -1,0 +1,22 @@
+{
+  "name": "@runly/prettier-config",
+  "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Common prettier config for Runly javascript applications",
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
+  "main": "index.json",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/runlyio/javascript.git"
+  },
+  "author": "Runly LLC",
+  "peerDependencies": {
+    "prettier": "2.x"
+  }
+}

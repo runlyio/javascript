@@ -5,6 +5,9 @@ module.exports = {
 		"@runly/eslint-config/imports",
 		"@runly/eslint-config/style",
 		"@runly/eslint-config/react",
-		"prettier" // this should always be last
+
+		// these 2 should be last
+		"plugin:prettier/recommended",
+		"prettier/react"
 	]
 };

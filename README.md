@@ -1,16 +1,12 @@
-# Runly ESLint Configuration
+# Runly Javascript Style Guide
 
-> Shareable ESLint configuration used in Runly client applications
-
-[Read more](http://eslint.org/docs/developer-guide/shareable-configs) in general about how eslint shareable configurations work.
-
-## Install
-
-```
-npm install @runly/eslint-config --save-dev
-```
+> Shareable [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) configuration used in Runly javascript applications
 
 ## Usage
+
+```
+npm install @runly/eslint-config @runly/prettier-config prettier --save-dev
+```
 
 Add to your `.eslintrc.js`:
 
@@ -22,6 +18,16 @@ module.exports = {
 };
 ```
 
+Add a `prettier` field to your `package.json` to use the shared prettier config:
+
+```json
+{
+  "name": "my-cool-app",
+  "version": "1.0.0",
+  "prettier": "@runly/prettier-config"
+}
+```
+
 The testing rules are not included by default and can be included via:
 
 ```js
@@ -31,6 +37,10 @@ module.exports = {
 	]
 };
 ```
+
+## Editor Integration
+
+You should be able to use your favorite editor's (\*cough\* [VS Code](https://code.visualstudio.com/)) [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and/or [Prettier plugin](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) to easily format your code on save or with the [*Format* command](https://code.visualstudio.com/docs/editor/codebasics#_formatting).
 
 ## Contributing
 

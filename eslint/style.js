@@ -6,10 +6,6 @@ module.exports = {
 	rules: {
 		// ERRORS
 
-		// No more bikeshedding on style; just use prettier
-		// https://github.com/not-an-aardvark/eslint-plugin-prettier
-		"prettier/prettier": ["error", { useTabs: true, trailingComma: "none", arrowParens: "avoid", endOfLine: "auto" }],
-
 		// enforce lowercase kebab case for filenames
 		// we have had issues in the past with case sensitivity & module resolution
 		// https://github.com/selaux/eslint-plugin-filenames
