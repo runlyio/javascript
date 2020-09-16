@@ -17,6 +17,9 @@
     "eslintconfig",
     "runly"
   ],
+  "scripts": {
+    "prepublishOnly": "copyfiles -f ../README.md ."
+  },
   "dependencies": {
     "babel-eslint": "^10.1.0",
     "eslint-config-prettier": "^6.11.0",
@@ -31,5 +34,8 @@
   },
   "peerDependencies": {
     "eslint": "6.x || 7.x"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.3.0"
   }
 }
