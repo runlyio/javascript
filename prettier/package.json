@@ -1,6 +1,6 @@
 {
   "name": "@runly/prettier-config",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "publishConfig": {
     "access": "public"
   },
@@ -10,7 +10,9 @@
     "prettier-config"
   ],
   "main": "index.json",
-  "files": ["../README.md"],
+  "files": [
+    "../README.md"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
