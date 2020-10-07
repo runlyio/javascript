@@ -1,51 +1,50 @@
 {
-  "name": "@runly/eslint-config",
-  "description": "Shareable ESLint configuration used in Runly client applications",
-  "main": "index.js",
-  "publishConfig": {
-    "access": "public"
-  },
-  "version": "3.0.1",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/runlyio/javascript.git"
-  },
-  "author": "Runly LLC",
-  "license": "MIT",
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "runly"
-  ],
-  "scripts": {
-    "prepublishOnly": "copyfiles -f ../README.md ."
-  },
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.3.0"
-    "babel-eslint": "^10.1.0",
-    "eslint-config-airbnb-typescript": "^11.0.0",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-config-prettier": "^6.12.0",
-    "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-filenames": "^1.3.2",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jest": "^24.0.1",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-monorepo": "~0.2.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react-functional-set-state": "^1.2.1",
-    "eslint-plugin-react-hooks": "^4.1.2",
-    "eslint-plugin-react": "^7.21.2",
-    "eslint-plugin-security": "^1.4.0",
-    "eslint-plugin-simple-import-sort": "^5.0.3",
-    "eslint-plugin-unicorn": "^22.0.0"
-  },
-  "peerDependencies": {
-    "eslint": "6.x || 7.x"
-  },
-  "devDependencies": {
-    "copyfiles": "^2.3.0",
-    "audit-ci": "^2.5.1"
-  }
+	"name": "@runly/eslint-config",
+	"description": "Shareable ESLint configuration used in Runly client applications",
+	"main": "index.js",
+	"publishConfig": {
+		"access": "public"
+	},
+	"version": "3.0.1",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/runlyio/javascript.git"
+	},
+	"author": "Runly LLC",
+	"license": "MIT",
+	"keywords": [
+		"eslint",
+		"eslintconfig",
+		"runly"
+	],
+	"scripts": {
+		"prepublishOnly": "copyfiles -f ../README.md ."
+	},
+	"dependencies": {
+		"@typescript-eslint/eslint-plugin": "^4.3.0",
+		"babel-eslint": "^10.1.0",
+		"eslint-config-airbnb-typescript": "^11.0.0",
+		"eslint-config-airbnb": "^18.2.0",
+		"eslint-config-prettier": "^6.12.0",
+		"eslint-plugin-eslint-comments": "^3.2.0",
+		"eslint-plugin-filenames": "^1.3.2",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-jest": "^24.0.1",
+		"eslint-plugin-jsx-a11y": "^6.3.1",
+		"eslint-plugin-monorepo": "~0.2.1",
+		"eslint-plugin-prettier": "^3.1.4",
+		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-react-functional-set-state": "^1.2.1",
+		"eslint-plugin-react-hooks": "^4.1.2",
+		"eslint-plugin-react": "^7.21.2",
+		"eslint-plugin-security": "^1.4.0",
+		"eslint-plugin-simple-import-sort": "^5.0.3",
+		"eslint-plugin-unicorn": "^22.0.0"
+	},
+	"peerDependencies": {
+		"eslint": "7.x"
+	},
+	"devDependencies": {
+		"copyfiles": "^2.3.0"
+	}
 }
