@@ -3,7 +3,7 @@
     "eslint",
     "prettier"
   ],
-  "version": "4.0.0",
+  "version": "4.0.1",
   "command": {
     "publish": {
       "message": ":shipit: Publish"
