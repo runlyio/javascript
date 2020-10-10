@@ -6,7 +6,7 @@
   "version": "4.0.1",
   "command": {
     "publish": {
-      "message": ":shipit: Publish"
+      "message": ":rocket: publish %s"
     }
   }
 }
