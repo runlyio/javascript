@@ -44,16 +44,18 @@ module.exports = {
 		// I'm not sure what issue this one is trying to prevent. it's fine; use those unescaped entities
 		"react/no-unescaped-entities": "off",
 
-		// implicit types are fine for local funcs
-		// we rely on explicit-module-boundary-types rule for return types on module boundaries which is more important IMO
+		// don't allow anys to propagate
+		"@typescript-eslint/no-explicit-any": "error",
+
+		// implicit types are fine as long as it isn't implicit any
 		"@typescript-eslint/explicit-function-return-type": "off",
+		"@typescript-eslint/explicit-module-boundary-types": "off",
 
 		// these are prohibitively strict when migrating a codebase to TS
 		// make them warnings instead
 		"@typescript-eslint/no-unsafe-assignment": "warn",
 		"@typescript-eslint/no-unsafe-member-access": "warn",
 		"@typescript-eslint/no-unsafe-call": "warn",
-		"@typescript-eslint/no-unsafe-return": "warn",
 
 		// this is redundant when using typescript types
 		"consistent-return": "off",
