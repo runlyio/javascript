@@ -1,7 +1,8 @@
 {
   "packages": [
     "eslint",
-    "prettier"
+    "prettier",
+    "tsconfig"
   ],
   "version": "4.2.0",
   "command": {
