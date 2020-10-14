@@ -5,8 +5,7 @@ module.exports = {
 		"promise",
 		"unicorn",
 		"simple-import-sort",
-		"monorepo",
-		"jest"
+		"monorepo"
 	],
 	extends: [
 		"airbnb-typescript",
@@ -17,8 +16,6 @@ module.exports = {
 		"plugin:promise/recommended",
 		"plugin:unicorn/recommended",
 		"plugin:monorepo/recommended",
-		"plugin:jest/recommended",
-		"plugin:jest/style",
 		"plugin:prettier/recommended",
 		"prettier/react",
 		"prettier/@typescript-eslint"
@@ -98,17 +95,7 @@ module.exports = {
 		// when using typescript, this isn't an issue
 		"react/jsx-props-no-spreading": "off",
 
-		"eslint-comments/disable-enable-pair": ["error", { allowWholeFile: true }],
-
-		// jest testing
-		"jest/consistent-test-it": "error",
-		"jest/lowercase-name": "error",
-		"jest/no-test-return-statement": "error",
-		"jest/prefer-hooks-on-top": "error",
-
-		"jest/no-if": "warn",
-		"jest/prefer-spy-on": "warn",
-		"jest/prefer-todo": "warn"
+		"eslint-comments/disable-enable-pair": ["error", { allowWholeFile: true }]
 	},
 	ignorePatterns: ["node_modules/", "dist", "package.json", "__generated__"],
 	overrides: [
@@ -117,6 +104,46 @@ module.exports = {
 			rules: {
 				// allow returning null from React components
 				"unicorn/no-null": "off"
+			}
+		},
+		{
+			files: [
+				"__test__/**/*.js",
+				"__test__/**/*.jsx",
+				"__test__/**/*.ts",
+				"__test__/**/*.tsx",
+				"__tests__/**/*.js",
+				"__tests__/**/*.jsx",
+				"__tests__/**/*.ts",
+				"__tests__/**/*.tsx",
+				"test/**/*.js",
+				"test/**/*.jsx",
+				"test/**/*.ts",
+				"test/**/*.tsx",
+				"tests/**/*.js",
+				"tests/**/*.jsx",
+				"tests/**/*.ts",
+				"tests/**/*.tsx",
+				"*.test.js",
+				"*.test.jsx",
+				"*.test.ts",
+				"*.test.tsx",
+				"*.spec.js",
+				"*.spec.jsx",
+				"*.spec.ts",
+				"*.spec.tsx"
+			],
+			plugins: ["jest"],
+			extends: ["plugin:jest/recommended", "plugin:jest/style"],
+			rules: {
+				"jest/consistent-test-it": "error",
+				"jest/lowercase-name": "error",
+				"jest/no-test-return-statement": "error",
+				"jest/prefer-hooks-on-top": "error",
+
+				"jest/no-if": "warn",
+				"jest/prefer-spy-on": "warn",
+				"jest/prefer-todo": "warn"
 			}
 		},
 		{
