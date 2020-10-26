@@ -97,7 +97,13 @@ module.exports = {
 
 		"eslint-comments/disable-enable-pair": ["error", { allowWholeFile: true }]
 	},
-	ignorePatterns: ["node_modules/", "dist", "package.json", "__generated__"],
+	ignorePatterns: [
+		"node_modules/",
+		"dist",
+		"package.json",
+		"__generated__",
+		".eslintrc.js"
+	],
 	overrides: [
 		{
 			files: ["*.jsx", "*.tsx"],
@@ -143,7 +149,12 @@ module.exports = {
 
 				"jest/no-if": "warn",
 				"jest/prefer-spy-on": "warn",
-				"jest/prefer-todo": "warn"
+				"jest/prefer-todo": "warn",
+
+				"import/no-extraneous-dependencies": [
+					"error",
+					{ devDependencies: true }
+				]
 			}
 		},
 		{
@@ -159,7 +170,8 @@ module.exports = {
 				"@typescript-eslint/explicit-module-boundary-types": "off",
 				"@typescript-eslint/no-unsafe-return": "off",
 				"@typescript-eslint/restrict-template-expressions": "off",
-				"@typescript-eslint/restrict-plus-operands": "off"
+				"@typescript-eslint/restrict-plus-operands": "off",
+				"@typescript-eslint/no-var-requires": "off"
 			}
 		}
 	]
